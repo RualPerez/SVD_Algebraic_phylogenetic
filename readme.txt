@@ -11,7 +11,7 @@ g++ -std=c++11 -c constructAlph.cpp distFrobenius.cpp flatteningMat.cpp getColum
 2) Compiling the main script (SVD.cpp) based on the other functions
 g++ -std=c++11 SVD.cpp constructAlph.o distFrobenius.o flatteningMat.o getColumns.o readFASTA.o realOrder.o realSplit.o  -o SVD -O1 -larmadillo
 
-3) instrucció per executar el fitxer Clean_Erik2
+3) To run the SVD just indicate the input fasta file, the characters that you want to exclude (like gaps: -) and the number of partitions ()
 ./SVD fasta_file.fa characters_to_exclude nb_partitions
 
-	Example: ./SVD 1_9_15_17.fa - 3
+	Example: ./SVD example.fa - 3
